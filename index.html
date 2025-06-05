@@ -5,6 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ReadyScore Support</title>
   <style>
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('images/icon.png') no-repeat center center;
+    background-size: contain;
+    opacity: 0.05; /* Adjust for visibility */
+    z-index: -1;
+    pointer-events: none;
+  }
     body {
       font-family: system-ui, sans-serif;
       line-height: 1.6;
